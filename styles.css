@@ -68,3 +68,84 @@ body {
 
 
 
+/* the CSS code of the home page */
+
+
+.hero{
+   background: url('Screenshot.png') no-repeat center center/cover;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.overlay{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    max-width: 1200px;
+    padding: 40px;
+   background: rgba(0, 0, 0, 0.4);
+   border-radius: 10px;
+}
+
+.left{
+    color: white;
+    max-width: 50%;
+}
+
+.left h1{
+    font-size: 16px;
+    margin-bottom: 20px;
+    max-width: 500px;
+}
+
+.btn-group{
+ display: flex;
+  align-items: center;
+  gap: 15px;
+
+}
+
+.btn-primary{
+    background-color: var(--secondary);
+    border: none;
+    padding: 12px 24px ;
+    color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.btn-secondary {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.quote-box{
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 30px;
+    width: 350px;
+    border-radius: 10px;
+    color: white;
+}
+
+.quote-box h2{
+    margin-bottom: 20px;
+}
+
+.transport{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
