@@ -182,8 +182,86 @@ select {
 }
 
 
+ 
+.mission-section {
+  background-color: var(--card-bg);
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.mission-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mission-title {
+  color: var(--primary);
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+ 
 
 
+ .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
 
+        .freight-section {
+            background-color: var(--card-bg);
+            padding: 80px 0;
+        }
+
+        .freight-container {
+            display: flex;
+            align-items: center;
+            gap: 60px;
+        }
+
+        .freight-content {
+            flex: 1;
+        }
+
+        .freight-title {
+            color: var(--primary);
+            font-size: 2.5rem;
+            margin-bottom: 30px;
+            font-weight: 700;
+            line-height: 1.2;
+        }
+
+        .freight-text {
+            font-size: 1.2rem;
+            color: var(--text);
+            white-space: pre-line;
+            margin-bottom: 30px;
+        }
+
+        .image-placeholder {
+            flex: 1;
+            background-color: #f0f0f0;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 8px;
+            color: #999;
+            font-size: 1.2rem;
+        }
+
+        @media (max-width: 768px) {
+            .freight-container {
+                flex-direction: column;
+            }
+            
+            .image-placeholder {
+                width: 100%;
+                margin-top: 30px;
+            }
+        }
 
 
