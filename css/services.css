@@ -136,7 +136,6 @@ body {
     grid-template-rows: repeat(2, minmax(200px, 300px));
     gap: 2rem;
     width: 80%;
-
 }
 
 .service-card-content {
@@ -156,6 +155,11 @@ body {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     position: relative;
+    border: 1px solid var(--bg);
+}
+
+.service-card:hover {
+    border: 1px solid var(--accent);
 }
 
 .service-card-title {
@@ -206,6 +210,11 @@ body {
     gap: 2rem;
 }
 
+.cta-img {
+    display: flex;
+    align-items: center;
+}
+
 .cta-img > img {
     width: 100%;
     border-radius: 15px;
@@ -246,4 +255,169 @@ body {
 .cta-btn:hover {
     background-color: var(--secondary);
     transform: translateY(-5px);
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px){
+    html {
+        font-size: 14px;
+    }
+
+    #hero-image {
+        width: 80%;
+    }
+
+    .hero-section::before {
+        height: 20rem;
+        width: 30rem;
+        top: 170px;
+        right: 50px;
+    }
+
+    .hero-section::after {
+        height: 15rem;
+        width: 20rem;
+        bottom: -30px;
+        left: 50px;
+    }
+
+    .hero-description {
+        right: 20px;
+    }
+
+    .services-cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, minmax(200px, 300px));
+        gap: 1rem;
+        width: 90%;
+    }
+}
+
+@media (max-width: 425px){
+    .main {
+        padding-bottom: 100px;
+    }
+
+    .hero-section::before {
+        height: 15rem;
+        width: 20rem;
+        top: 140px;
+        right: 30px;
+    }
+
+    .hero-section::after {
+        height: 11rem;
+        width: 15rem;
+        top: 240px;
+        left: 30px;
+    }
+
+    .hero-section {
+        flex-direction: column;
+        padding-top: 150px;
+        justify-content: flex-start;
+    }
+
+    .hero-description {
+        position: relative;
+        align-items: center;
+        height: auto;
+        width: 80%;
+        gap: 2rem;
+        right: 0;
+        bottom: 0;
+        top: 50px;
+    }
+
+    .hero-intro-text {
+        text-align: center;
+    }
+
+    .services-section-title {
+        font-size: 2rem;
+    }
+
+    .services-cards {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, minmax(200px, 300px));
+        gap: 1rem;
+        width: 80%;
+    }
+
+    .cta-content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 1fr);
+        width: 80%;
+        gap: 2rem;
+    }
+
+    .cta-text {
+        padding: 0px;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .cta-title {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 375px){
+    .hero-section::before {
+        height: 10rem;
+        width: 18rem;
+        top: 140px;
+        right: 25px;
+    }
+
+    .hero-section::after {
+        height: 10rem;
+        width: 15rem;
+        top: 220px;
+        left: 30px;
+    }
+
+    .hero-description {
+        padding: 20px;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 320px){
+    .hero-section {
+        padding-top: 100px;
+    }
+
+    .hero-section::before {
+        height: 10rem;
+        width: 15rem;
+        top: 90px;
+        right: 25px;
+    }
+
+    .hero-section::after {
+        height: 8rem;
+        width: 15rem;
+        top: 170px;
+        left: 25px;
+    }
+
+    .hero-description {
+        padding: 10px;
+        width: 90%;
+    }
+
+    .cta-title {
+        font-size: 2rem;
+    }
+
+    .cta-phone {
+        font-size: 1.8rem;
+    }
 }
