@@ -10,9 +10,88 @@
 </head>
 <body>
     <main class="main">
-        <div class="hero-bg-img">
-            <img src="images/" alt="">
-        </div>
+        <section class="hero-section">
+            <div class="content-box">
+                <img src="images/logo.png" alt="logo" id="logo">
+                <img src="images/pricing hero image.jpg" alt="pricing image">
+                <h1>Get a Quick Shipping Estimate</h1>
+                <h2>Easily calculate your cargo shipping cost in seconds.</h2>
+            </div>
+            <div class="pricing-form">
+                <form action="submit" class="form-field">
+                    <div class="form-group">
+                        <label for="origin" class="label-title">Origin:</label>
+                        <select name="origin" id="origin" required>
+                            <option value="" disabled selected>-Select-</option>
+                            <option value="Kabul">Kabul</option>
+                            <option value="Parwan">Parwan</option>
+                            <option value="Herat">Herat</option>
+                            <option value="Kandahar">Kandahar</option>
+                            <option value="Badakhshan">Badakhshan</option>
+                            <option value="Balkh">Balkh</option>
+                            <option value="Kunduz">Kunduz</option>
+                            <option value="Takhar">Takhar</option>
+                            <option value="Helmand">Helmand</option>
+                            <option value="Kapisa">Kapisa</option>
+                            <option value="Kunar">Kunar</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="destination" class="label-title">Destination:</label>
+                        <select name="destination" id="destination" required>
+                            <option value="" disabled selected>-Select-</option>
+                            <option value="Kabul">Kabul</option>
+                            <option value="Parwan">Parwan</option>
+                            <option value="Herat">Herat</option>
+                            <option value="Kandahar">Kandahar</option>
+                            <option value="Badakhshan">Badakhshan</option>
+                            <option value="Balkh">Balkh</option>
+                            <option value="Kunduz">Kunduz</option>
+                            <option value="Takhar">Takhar</option>
+                            <option value="Helmand">Helmand</option>
+                            <option value="Kapisa">Kapisa</option>
+                            <option value="Kunar">Kunar</option>
+                        </select>
+                    </div>
+
+                        <fieldset class="form-group">
+                        <legend class="label-title">Shipping Method:</legend>
+                        <label><input type="radio" name="shipping_method" value="land" required> Land</label>
+                        <label><input type="radio" name="shipping_method" value="air"> Air</label>
+                        <label><input type="radio" name="shipping_method" value="sea"> Sea</label>
+                        </fieldset>
+
+                        <fieldset class="form-group">
+                        <legend class="label-title">Cargo Type:</legend>
+                        <label><input type="radio" name="cargo_type" value="commercial" required> Commercial</label>
+                        <label><input type="radio" name="cargo_type" value="personal"> Personal</label>
+                        </fieldset>
+
+                    <div class="form-group">
+                        <label for="weight" class="label-title">Weight (kg):</label>
+                        <input type="number" id="weight" name="weight" min="0" step="0.1" required>
+                    </div>
+
+                        <div class="form-group dimension-group">
+                        <label class="label-title">Dimensions (cm):</label>
+                        <input type="number" id="length" name="length" min="0" step="0.1" placeholder="Length" required>
+                        <input type="number" id="width" name="width" min="0" step="0.1" placeholder="Width" required>
+                        <input type="number" id="height" name="height" min="0" step="0.1" placeholder="Height" required>
+                    </div>
+
+                        <fieldset class="form-group">
+                        <legend class="label-title">Delivery Type:</legend>
+                        <label><input type="radio" name="delivery_type" value="p2p" required> Port-to-Port</label>
+                        <label><input type="radio" name="delivery_type" value="d2d"> Door-to-Door</label>
+                        </fieldset>
+
+                    <div class="form-group">
+                        <button type="submit">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </main>
 </body>
 </html>
