@@ -64,3 +64,40 @@ body {
     height: 40px;
     width: 100px;
 }
+.burger{
+    display: none;
+    cursor: pointer;
+    gap: 5px;
+    flex-direction: column;
+    
+}
+.burger div{
+    height: 3px;
+    width: 25px;
+    background-color: var(--card-bg);
+    border-radius: 2px;
+}
+@media (max-width:768px){
+    .nav-btn{
+        padding: 5px 20px;
+        font-size: 0.8rem;
+    }
+    .navbar-links a{
+        font-size: 0.8rem;
+        display: none;
+    }
+    .logo img{
+        height: 20px;
+        width: 50px;
+    }
+    .header{
+        padding: 5px 10px;
+        justify-content: space-between;
+    }
+    .navbar-links{
+        gap: 10px;
+    }
+    .burger{
+        display: flex;
+    }
+}
