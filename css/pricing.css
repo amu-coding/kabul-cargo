@@ -73,8 +73,7 @@ body {
   gap: 20px;
 }
 
-.form-group,
-fieldset.form-group {
+.form-group, fieldset.form-group {
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -90,16 +89,16 @@ select,
 input[type="number"] {
   padding: 10px 14px;
   font-size: 1rem;
-  border: 2px solid var(--primary);
+  border: 1px solid var(--primary);
   border-radius: 10px;
-  background-color: var(--bg);
+  background-color: var(--card-bg);
   transition: all 0.3s ease;
 }
 
 select:focus,
 input[type="number"]:focus {
   outline: none;
-  border-color: var(--secondary);
+  border-color: var(--accent);
   background-color: #fff;
 }
 
@@ -114,7 +113,7 @@ input[type="number"]:focus {
 }
 
 fieldset.form-group {
-  border: 2px solid var(--primary);
+  border: 1px solid var(--primary);
   border-radius: 12px;
   padding: 15px 20px;
 }
@@ -133,14 +132,14 @@ fieldset.form-group label {
 }
 
 input[type="radio"] {
-  accent-color: var(--secondary);
+  accent-color: var(--accent);
   width: 18px;
   height: 18px;
   cursor: pointer;
 }
 
 button[type="submit"] {
-  background-color: var(--secondary);
+  background-color: var(--accent);
   color: #fff;
   font-weight: 700;
   font-size: 1.1rem;
@@ -156,25 +155,26 @@ button[type="submit"]:hover {
   background-color: #e65c00;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .overlay-box {
-    flex-direction: column;
-    align-items: center;
-    padding: 30px 20px;
-  }
+@media (max-width: 768px){
+    .hero-section {
+        flex-direction: column;
+    }
 
-  .hero-title-box h1 {
-    font-size: 2rem;
-  }
+    .content-box {
+        width: 90%;
+    }
 
-  .hero-title-box h2 {
-    font-size: 1rem;
-  }
+    .content-box>h1 {
+        text-align: center;
+    }
+
+    .content-box>h2 {
+        text-align: center;
+    }
 }
 
-@media (max-width: 480px) {
-  .dimension-group {
-    flex-direction: column;
-  }
+@media (max-width: 425px){
+    .content-box>h1 {
+        font-size: 1.5rem;
+    }
 }
