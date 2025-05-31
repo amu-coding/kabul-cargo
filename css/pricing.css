@@ -176,5 +176,18 @@ button[type="submit"]:hover {
 @media (max-width: 425px){
     .content-box>h1 {
         font-size: 1.5rem;
-    }
+        font-family: "Inter", sans-serif;
+    background-color: var(--bg);}
+    
+
+.main {
+  background-image: url('D:/Edu/test codes/Ulearna assignments/21 cargo website project/images/pricing hero image.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
