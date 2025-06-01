@@ -17,8 +17,10 @@
 
 body {
     font-family: "Inter", sans-serif;
-    background-color: var(--bg);}
-.header{
+    background-color: var(--bg);
+}
+
+.header {
     display: flex;
     justify-content: space-between;
     width: 80%;
@@ -26,41 +28,110 @@ body {
     align-items: center;
     background-color: var(--primary);
     padding: 10px 20px;
-    border-radius: 30px;
+    border-radius: 50px;
     position: sticky;
     margin-top: 5px;
 }
-.navbar-links{
+
+.navbar-links {
     display: flex;
     gap: 25px;
 }
-.navbar-links > li{
+
+.navbar-links > li {
     list-style: none;
 }
-.navbar-links a{
+
+.navbar-links a {
     text-decoration: none;
-    color: gray;
+    color: var(--card-bg);
     font-size: 1.2rem;
     transition: 0.4s ease;
+    font-weight: 300;
 }
-.navbar-links a:hover{
-    text-decoration: underline;
-    color: var(--card-bg);
+
+.navbar-links a:hover {
+    color: var(--secondary);
 }
-.nav-btn{
+
+.nav-btn {
     background-color: var(--bg);
     color: var(--text);
     text-decoration: none;
-    padding: 10px 40px;
+    padding: 10px 30px;
     border-radius: 30px;
     transition: 0.4s ease;
 }
-.nav-btn:hover{
-    background-color: var(--accent);
+
+.nav-btn:hover {
+    background-color: var(--secondary);
     transform: translateY(-1px);
     color: white;
 }
-.logo img{
+
+.logo img {
     height: 40px;
     width: 100px;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    gap: 5px;
+    flex-direction: column;
+}
+
+.burger div {
+    height: 3px;
+    width: 25px;
+    background-color: var(--card-bg);
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    .burger {
+        display: flex;
+    }
+
+    .navbar {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--primary);
+        flex-direction: column;
+        align-items: center;
+        z-index: 1000;
+        padding: 15px 0;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .navbar-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .navbar-links a {
+        font-size: 1rem;
+    }
+
+    .nav-btn {
+        display: none;
+    }
+
+    .menu-toggle:checked ~ .navbar {
+        display: flex;
+    }
+
+    .logo img {
+        width: 60px;
+        height: 25px;
+    }
+}
+
+@media (max-width: 425px){
+    .header {
+        width: 90%;
+    }
 }

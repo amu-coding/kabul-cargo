@@ -4,11 +4,156 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kabul Cargo</title>
+    <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
-    
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="./images/logo white.png" alt="logo-img" class="nav-logo">
+        </div>
+        <div class="burger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav class="navbar">
+            <ul class="navbar-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="pricing.html">Pricing</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="pricing.html#get-quote" class="nav-btn">Get a Quote</a>
+    </header>
+
+    <!-- Home Page -->
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="overlay">
+        <!-- Left Text Content -->
+        <div class="left">
+            <h1>Connecting the world, one shipment at a time.</h1>
+            <p>Reliable and efficient freight forwarding, logistics, and cargo services tailored to your needs.</p>
+            <div class="btn-group">
+            <button class="btn-primary">Get Started</button>
+            <button class="btn-secondary">Learn More</button>
+            </div>
+        </div>
+
+        <!-- Quote Box -->
+        <div class="quote-box">
+            <h2>Get a Quote</h2>
+            <form>
+            <div class="form-group">
+                <label>From</label>
+                <select>
+                <option value="">Select origin</option>
+                <option value="kabul">Kabul</option>
+                <option value="herat">Herat</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>To</label>
+                <select>
+                <option value="">Select destination</option>
+                <option value="dubai">Dubai</option>
+                <option value="istanbul">Istanbul</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Type</label>
+                <select>
+                <option value="">Choose shipment type</option>
+                <option value="air">Air Freight</option>
+                <option value="sea">Sea Freight</option>
+                <option value="land">Land Freight</option>
+                </select>
+            </div>
+            <button type="submit" class="btn-quote">Request Quote</button>
+            </form>
+        </div>
+        </div>
+    </section>
+
+    <!-- Mission Section -->
+    <section class="mission-section">
+        <div class="mission-content">
+        <h2 class="mission-title">Our Mission</h2>
+        <p>To deliver exceptional logistics and transport solutions across the globe, empowering businesses and individuals through seamless cargo movement.</p>
+        </div>
+    </section>
+
+    <!-- Freight Section -->
+    <section class="freight-section">
+        <div class="container">
+        <div class="freight-container">
+            <div class="freight-content">
+            <h2 class="freight-title">International Freight Solutions</h2>
+            <p class="freight-text">
+                We specialize in international shipping across air, sea, and land.
+                Our goal is to provide fast, secure, and efficient services to make your global logistics simple.
+            </p>
+            <button class="btn-primary">Explore Services</button>
+            </div>
+            <div class="image-placeholder">
+            Freight Image Placeholder
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-top">
+            <div class="footer-column">
+                <h4>About</h4>
+                <ul>
+                    <li><a href="#">company</a></li>
+                    <li><a href="#">Profile</a></li>
+                    <li><a href="#">Our team</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Services</h4>
+                <ul>
+                    <li><a href="#">International fright</a></li>
+                    <li><a href="#">All prouduct & Solutions</a></li>
+                    <li><a href="#">Quick Estimate</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Terms of service</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Contact Us</h4>
+                <div class="social-icons">
+                    <a href="https://facebook.com" target="_blank">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="mailto:nawidkahn163@gmail.com">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+        <div class="footer-end">
+            © 2025 Kabul Cargo. All rights reserved.
+        </div>
+    </footer>
 </body>
 </html>

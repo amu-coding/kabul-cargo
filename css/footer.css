@@ -20,44 +20,96 @@ body {
     background-color: var(--bg);
 }
 
-footer{
+/* Footer Styling */
+footer {
+    background-color: var(--primary);
+    color: var(--card-bg);
+    padding: 40px 20px;
     display: flex;
-    background-color: var(--heading);
-    justify-content: center;
-    gap: 100px;
-    height: 50vh;
-    align-items: center;
-    padding-top: 40px;
     flex-direction: column;
+    align-items: center;
 }
-.footer-top{
+
+.footer-top {
     display: flex;
     justify-content: space-between;
-    width: 80%;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1200px;
+    gap: 40px;
 }
-footer h4{
-    color: var(--card-bg);
-}
-footer a{
-    text-decoration: none;
-    color: gray;
-    font-size: 0.9rem;
-    transition: 0.4s ease;
-}
-footer a:hover{
-    color: var(--card-bg);
 
+.footer-column {
+    flex: 1 1 200px;
+    min-width: 180px;
 }
-footer ul{
+
+footer h4 {
+    color: var(--card-bg);
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+}
+
+footer ul {
     list-style: none;
-    padding-top:20px;
+    padding: 0;
 }
-footer li{
-    padding: 3px 0;
+
+footer li {
+    margin: 8px 0;
 }
-.footer-end{
-    color:gray;
+
+footer a {
+    text-decoration: none;
+    color: var(--card-bg);
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
 }
-.footer-top > .footer-column > a{
-    margin: 0 10px;
+
+footer a:hover {
+    color: var(--secondary);
+}
+
+.footer-column a i {
+    font-size: 1rem;
+    margin-right: 10px;
+    color: var(--accent);
+    transition: color 0.3s ease;
+}
+
+.footer-column a i:hover {
+    color: var(--secondary);
+}
+
+.footer-end {
+    text-align: center;
+    margin-top: 30px;
+    color: #ccc;
+    font-size: 0.85rem;
+}
+
+.social-icons {
+    margin-top: 15px;
+}
+
+.social-icons a {
+    display: inline-block;
+}
+
+
+@media (max-width: 768px) {
+    .footer-top {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .footer-column {
+        width: 100%;
+    }
+
+    .footer-column a i {
+        margin: 10px 8px 0;
+    }
 }
